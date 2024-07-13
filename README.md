@@ -4,10 +4,14 @@ This project is part of the "Automation With Selenium WebDriver & TestNG" course
 
 ## Project Structure
 
-- **src/main/java**: Contains the main application code (if any).
-- **src/test/java**: Contains the test classes and test methods.
-- **testng.xml**: Configuration file for running TestNG tests.
-- **pom.xml**: Maven configuration file for managing dependencies.
+- **src/main/java/pages**: Contains the Page Object Model (POM) classes.
+    - `LoginPage.java`: Contains methods to interact with the login page elements.
+    - `DashboardPage.java`: Contains methods to interact with the dashboard page elements.
+- **src/main/java/tests**: Contains the test classes.
+    - `LoginTests.java`: Contains the test methods for login functionality.
+- **src/test/resources**: Contains the test resources.
+    - `config.properties`: Configuration file with key-value pairs for data-driven testing.
+- **Runner.xml**: TestNG suite configuration file.
 
 ## Prerequisites
 
@@ -15,6 +19,8 @@ This project is part of the "Automation With Selenium WebDriver & TestNG" course
 - Maven 3.6.3 or higher
 - Google Chrome browser
 - ChromeDriver
+- IntelliJ IDEA or any other IDE
+
 
 ## Setup
 
